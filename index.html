@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="styles.css" rel="stylesheet">
+    <title>Title</title>
+</head>
+<body>
+    <div id="player-origin" class="player hidden">
+        <h3 class="player__title"></h3>
+        <div class="player__content">
+            <div class="player__buttons">
+                <button onclick="play(this)" class="player__button js-player-play">PLAY</button>
+                <button onclick="stop(this)" class="player__button js-player-stop">STOP</button>
+            </div>
+            <div class="player__progress">... ... .. ..</div>
+        </div>
+    </div>
+    <audio id="audio" class="hidden"></audio>
+
+    <div class="search">
+        <input class="search__field" type="text" oninput="search(this.value)" value="">
+        <button class="search__button">SEARCH</button>
+    </div>
+
+    <div id="players-list"></div>
+
+    <script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
